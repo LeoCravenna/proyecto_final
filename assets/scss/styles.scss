@@ -186,6 +186,7 @@ body {
     background-color: $color_cabecera;
 
     .navbar-brand {
+        @include tamaños(300px, 70px);
         color: $color_fondo
     }
     
@@ -238,8 +239,8 @@ footer {
                 text-decoration: none;
                 
                 img:hover {
-                    width: 35px;
-                    height: 35px;
+                    /*width: 35px;
+                    height: 35px;*/
                 }
             }
         }

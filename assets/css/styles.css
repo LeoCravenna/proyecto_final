@@ -87,6 +87,8 @@ body {
 .navbar {
   background-color: #ff7a2d; }
   .navbar .navbar-brand {
+    width: 300px;
+    height: 70px;
     color: #ffcc55; }
   .navbar .navbar-brand:hover {
     color: #3a2032; }
@@ -120,8 +122,8 @@ footer {
         padding: 10px;
         text-decoration: none; }
         footer ul li a img:hover {
-          width: 35px;
-          height: 35px; }
+          /*width: 35px;
+                    height: 35px;*/ }
   footer #copyright {
     padding: 0px 10px 10px 10px;
     text-align: center;
