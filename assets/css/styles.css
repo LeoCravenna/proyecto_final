@@ -120,10 +120,11 @@ footer {
       display: inline; }
       footer ul li a {
         padding: 10px;
-        text-decoration: none; }
-        footer ul li a img:hover {
-          /*width: 35px;
-                    height: 35px;*/ }
+        text-decoration: none;
+        /*img:hover {
+                    width: 35px;
+                    height: 35px;
+                }*/ }
   footer #copyright {
     padding: 0px 10px 10px 10px;
     text-align: center;
