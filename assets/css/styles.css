@@ -11,25 +11,55 @@
     grid-template-areas: 'titulo' 'contImg1' 'contImg2' 'contImg3' 'contImg4' 'contImg5' 'contImg6'; }
   body > .contenedor_grid_diseños {
     grid-template-areas: 'titulo' 'contImg1' 'contImg2' 'contImg3' 'contImg4' 'contImg5' 'contImg6'; }
-  /*body > .contenedor_grid_proyectos > .container2 > .middle {
-        opacity: 1;
-    }*/
-  /*body > .contenedor_grid_diseños > .container2 > .middle {
-        opacity: 1;
-    }*/ }
+  body > .contenedor_grid_proyectos > .container2 > .middle, body > .contenedor_grid_diseños > .container2 > .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+  body > .contenedor_grid_diseños > .container2 > .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+  body > .navbar > .navbar-brand {
+    width: 200px;
+    height: 50px; } }
 
 /*Tablets*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   body > .contenedor_grid_proyectos, body > .contenedor_grid_diseños {
     grid-template-areas: 'titulo titulo' 'contImg1 contImg2' 'contImg3 contImg4' 'contImg5 contImg6'; }
   body > .contenedor_grid_diseños {
     grid-template-areas: 'titulo titulo' 'contImg1 contImg2' 'contImg3 contImg4' 'contImg5 contImg6'; }
-  /*body > .contenedor_grid_proyectos > .container2 > .middle {
-        opacity: 1;
-    }*/
-  /*body > .contenedor_grid_diseños > .container2 > .middle {
-        opacity: 1;
-    }*/ }
+  body > .contenedor_grid_proyectos > .container2 > .middle, body > .contenedor_grid_diseños > .container2 > .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+  body > .contenedor_grid_diseños > .container2 > .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+  body > .navbar > .navbar-brand {
+    width: 180px;
+    height: 45px; } }
 
 /*Monitor*/
 @media only screen and (min-width: 1200px) {
@@ -87,14 +117,14 @@ body {
 .navbar {
   background-color: #ff7a2d; }
   .navbar .navbar-brand {
-    width: 300px;
+    width: 350px;
     height: 70px;
     color: #ffcc55; }
   .navbar .navbar-brand:hover {
     color: #3a2032; }
   .navbar .navbar-toggler {
     border: 1px solid #3a2032; }
-  .navbar .navbar .navbar-toggler-icon {
+  .navbar .navbar-toggler-icon {
     background-image: url("../../img/menu.png"); }
   .navbar .nav-link {
     color: #ffcc55;
@@ -341,12 +371,10 @@ footer {
       font-size: 18px; }
     #contenido_contactarme form input.boton_enviar {
       background-color: #b82e04;
-      color: #ffffff;
-      margin-left: 465px; }
+      color: #ffffff; }
     #contenido_contactarme form input.boton_enviar:hover {
       background-color: #ff4c16;
-      color: #ffffff;
-      margin-left: 465px; }
+      color: #ffffff; }
 
 /*FIN PANTALLA CONTACTARME///////////////*/
 /*///////////////////////////////////////*/

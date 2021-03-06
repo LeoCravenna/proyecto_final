@@ -63,17 +63,36 @@ $espacioEntrePalabras: 15px;
         'contImg6';
     }
 
-    /*body > .contenedor_grid_proyectos > .container2 > .middle {
+    body > .contenedor_grid_proyectos > .container2 > .middle {
+        transition: .5s ease;
         opacity: 1;
-    }*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
-    /*body > .contenedor_grid_diseños > .container2 > .middle {
+    body > .contenedor_grid_diseños > .container2 > .middle {
+        transition: .5s ease;
         opacity: 1;
-    }*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    body > .navbar > .navbar-brand {
+        width: 200px;
+        height: 50px;
+    }
 }    
 
 /*Tablets*/
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) and (max-width:1199px) {
     body > .contenedor_grid_proyectos {
         grid-template-areas: 
         'titulo titulo'
@@ -90,13 +109,32 @@ $espacioEntrePalabras: 15px;
         'contImg5 contImg6';
     }
 
-    /*body > .contenedor_grid_proyectos > .container2 > .middle {
+    body > .contenedor_grid_proyectos > .container2 > .middle {
+        transition: .5s ease;
         opacity: 1;
-    }*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
-    /*body > .contenedor_grid_diseños > .container2 > .middle {
+    body > .contenedor_grid_diseños > .container2 > .middle {
+        transition: .5s ease;
         opacity: 1;
-    }*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    body > .navbar > .navbar-brand {
+        width: 180px;
+        height: 45px;
+    }
 }
 
 /*Monitor*/
@@ -186,7 +224,7 @@ body {
     background-color: $color_cabecera;
 
     .navbar-brand {
-        @include tamaños(300px, 70px);
+        @include tamaños(350px, 70px);
         color: $color_fondo
     }
     
@@ -198,7 +236,7 @@ body {
         border: 1px solid $color_oscuro;
     }
     
-    .navbar .navbar-toggler-icon {
+    .navbar-toggler-icon {
         background-image: url("../../img/menu.png");
     }
 
@@ -629,13 +667,13 @@ footer {
         input.boton_enviar {
             background-color: $color_titulo;
             color: $color_blanco;
-            margin-left: 465px;
+            //margin-left: 465px;
         }
         
         input.boton_enviar:hover {
             background-color: #ff4c16;
             color: #ffffff;
-            margin-left: 465px;
+            //margin-left: 465px;
         }
     }
     
