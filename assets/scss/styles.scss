@@ -41,6 +41,21 @@ $espacioEntrePalabras: 15px;
 
 /*Mobile First*/
 @media only screen and (max-width:767px) {
+    body > .contenedor_sobreMi {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 70%;
+            margin-bottom: 30px;
+        }
+
+        p {
+            width: 70%;
+            margin: 0px;
+        }
+    }
+
     body > .contenedor_grid_proyectos {  
         grid-template-areas: 
         'titulo'
@@ -93,6 +108,21 @@ $espacioEntrePalabras: 15px;
 
 /*Tablets*/
 @media only screen and (min-width:768px) and (max-width:1199px) {
+    body > .contenedor_sobreMi {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 70%;
+            margin-bottom: 30px;
+        }
+
+        p {
+            width: 70%;
+            margin: 0px;
+        }
+    }
+
     body > .contenedor_grid_proyectos {
         grid-template-areas: 
         'titulo titulo'
@@ -392,13 +422,14 @@ footer {
 /*///////////////////////////////////////*/
 
 #contenedor_titulo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 25px;
+    display: grid;
+    text-align: center;
+    position: relative;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    margin-bottom: 50px;
 
     .titulo {
         color: $color_titulo;
@@ -441,90 +472,6 @@ footer {
 
     &__estilos_enlace {
         color:$color_subtitulo;
-    }
-
-    &__estilos_enlace:hover {
-        color:$color_oscuro;
-    }
-}
-
-.contenedor_sobreMi2 {
-    @extend .contenedor_sobreMi;
-
-    &__img_sobreMi2 {
-        @extend .contenedor_sobreMi__img_sobreMi;
-    }
-
-    &__texto_sobreMi2 {
-        @extend .contenedor_sobreMi__texto_sobreMi;
-        
-        &--color {
-            color: $color_subtitulo;
-        }
-    }
-
-    &__estilos_span {
-        @extend .contenedor_sobreMi__estilos_span;
-    }
-
-    &__estilos_enlace {
-        @extend .contenedor_sobreMi__estilos_enlace;
-    }
-
-    &__estilos_enlace:hover {
-        color:$color_oscuro;
-    }    
-}
-
-.contenedor_sobreMi3 {
-    @extend .contenedor_sobreMi;
-
-    &__img_sobreMi3 {
-        @extend .contenedor_sobreMi__img_sobreMi;
-    }
-
-    &__texto_sobreMi3 {
-        @extend .contenedor_sobreMi__texto_sobreMi;
-
-        &--color {
-            color: $color_oscuro;
-        }
-    }
-
-    &__estilos_span {
-        @extend .contenedor_sobreMi__estilos_span;
-    }
-
-    &__estilos_enlace {
-        @extend .contenedor_sobreMi__estilos_enlace;
-    }
-
-    &__estilos_enlace:hover {
-        color:$color_titulo;
-    }
-}
-
-.contenedor_sobreMi4 {
-    @extend .contenedor_sobreMi;
-
-    &__img_sobreMi4 {
-        @extend .contenedor_sobreMi__img_sobreMi;
-    }
-
-    &__texto_sobreMi4 {
-        @extend .contenedor_sobreMi__texto_sobreMi;
-
-        &--color {
-            color: $color_cabecera;
-        }
-    }
-
-    &__estilos_span {
-        @extend .contenedor_sobreMi__estilos_span;
-    }
-
-    &__estilos_enlace {
-        @extend .contenedor_sobreMi__estilos_enlace;
     }
 
     &__estilos_enlace:hover {
@@ -620,23 +567,39 @@ footer {
 #contenido_contactarme {
     @include tamaños(100%, auto);
 
-    margin-top: 25px;
-    margin-bottom: 30px;
-
-    h1 {
-        color: $color_titulo;
+    #contenedor_titulo_contactarme {
+        display: grid;
         text-align: center;
+        position: relative;
+        animation-name: aparecer;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+        animation-delay: 0s;
+
+        .titulo {
+            color: $color_titulo;
+            text-align: center;
+        }
     }
 
-    h2 {
-        color: $color_subtitulo;
-        text-align: center;
+    #contenedor_subtitulo_contactarme {
+        @extend #contenedor_titulo_contactarme;
+
+        .subtitulo {
+            color: $color_subtitulo;
+            text-align: center;
+            margin-bottom: 70px;
+        }
     }
 
     form  {
         color: $color_titulo;
         text-align: center;
         font-size: 18px;
+
+        .contenedor_input {
+            margin-bottom: 40px;
+        }
 
         div .estilo_label {
             font-weight: $textoGrosorGruesa;
@@ -648,20 +611,21 @@ footer {
         }
 
         input.estilo_nombre {
-            width: 525px;
+            width: 70%;
         }
         
         input.estilo_email {
-            width: 545px;
+            width: 70%;
         }
         
         input.estilo_telefono {
-            width: 525px;
+            width: 70%;
         }
         
         textarea {
-            width: 600px;
+            width: 70%;
             font-size: 18px;
+            display: inline;
         }
         
         input.boton_enviar {

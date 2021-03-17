@@ -8,6 +8,8 @@
         <meta name="description" content="Contactame y contame en que te puedo ayudar para que juntos logremos un producto creativo, original y único.">
         <title>Victoria Ramos Design - Contactarme</title>
 
+        <link rel="icon" type="image/ico" href="../img/logo_web.ico" />
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -53,43 +55,32 @@
 
         <div id="contenido_contactarme">
 
-            <h1>Contactarme</h1>
+            <div id="contenedor_titulo_contactarme">
+                <h1 class="titulo">Contactarme</h1>
+            </div>
 
-            <h2>¡Si querés conocerme y contarme en que te puedo ayudar,<br>completá el siguiente formulario!</h2>
-            <br>
+            <div id="contenedor_subtitulo_contactarme">
+                <h2 class="subtitulo">¡Si querés conocerme y contarme en que te puedo ayudar,<br>completá el siguiente formulario!</h2>
+            </div>
+
             <form action="../index.html" method="get">
                 
-                <div align="center" class="form-group">
-                    <label for="nombre" class="estilo_label col-sm-2">Nombre:</label>
-                    <div class="col-sm-10">
-                        <input class="estilo_nombre form-control" type="text" id="nombre" name="nombre" placeholder="Escriba aquí su nombre..." required />
-                    </div>    
-                </div>
-
-                <br>
-                <br>        
+                <div align="center" class="form-group contenedor_input">
+                    <!--<label for="nombre" class="estilo_label col-sm-2">Nombre:</label>-->
+                    <input class="estilo_nombre form-control" type="text" id="nombre" name="nombre" placeholder="Escriba aquí su nombre..." required />  
+                </div>     
                 
-                <div align="center" class="form-group">
-                    <label for="email" class="estilo_label">Email:</label>
+                <div align="center" class="form-group contenedor_input">
                     <input class="estilo_email form-control" type="email" id="email" name="email" placeholder="Escriba aquí su e-mail..." required />
                 </div>
-                
-                <br>
-                <br>
 
-                <div align="center" class="form-group">
-                    <label for="nombre" class="estilo_label">Tel./Cel.:</label>
+                <div align="center" class="form-group contenedor_input">
                     <input class="estilo_telefono form-control" type="number" id="telefono" name="telefono" placeholder="Escriba aquí su teléfono..." required />
                 </div>
 
-                <br>
-                <br>
-
-                <div align="center" class="form-group">
+                <div align="center" class="form-group contenedor_input">
                     <textarea id="comentarios" name="comentarios" class="form-control" cols="33" rows="10" placeholder="Detalle aquí su consulta..." required></textarea>
                 </div>
-
-                <br>
                 
                 <div align="center">
                     <input class="btn boton_enviar" type="submit" value="Enviar consulta" />
