@@ -362,6 +362,20 @@ footer {
             font-weight: $textoGrosorGruesa;
         }
     }
+
+    /*.carousel-item {
+        height: 20rem;
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 20rem;
+            opacity: 1;
+        }
+    }*/
+
 }
   
 .container2:hover .image {
@@ -413,6 +427,7 @@ footer {
         opacity: 0.3;
     }
 }
+
 
 /*///////////////////////////////////////*/
 /*FIN PANTALLA PRINCIPAL/////////////////*/
@@ -518,12 +533,13 @@ footer {
             }
         }
     }
-
+    
     img {
         border: 2px solid $color_borde_img;
         border-radius: 5px;
         width: 100%;
     }
+
 }
 
 /*FIN PANTALLA PROYECTOS/////////////////*/
